@@ -2,6 +2,7 @@
 layout: article
 title:  "使用ZooKeeper构建ActiveMQ高可用集群"
 tags: ops
+modify_date: 2018-05-31 00:00:01
 ---
 > 一种构建ActiveMQ高可用集群的方案。
 
