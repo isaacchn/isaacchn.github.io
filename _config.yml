@@ -48,8 +48,8 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-#repository: isaacchn/isaacchn.github.io
-#repository_tree: master
+repository: isaacchn/isaacchn.github.io
+repository_tree: master
 
 
 ## => Paths
