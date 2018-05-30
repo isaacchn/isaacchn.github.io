@@ -61,7 +61,7 @@ server.3=10.188.102.210:2888:3888
 		directory="${activemq.data}/leveldb"
 		replicas="3"
 		bind="tcp://0.0.0.0:0"
-		zkAddress="10.188.102.149:2181,10.188.102.24:2181,10.188.102.210:2181" 
+		zkAddress="10.188.102.149:2181,10.188.102.24:2181,10.188.102.210:2181"
 		hostname="10.188.102.149"
 		/>
 </persistenceAdapter>
