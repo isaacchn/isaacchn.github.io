@@ -29,6 +29,7 @@ Lsyncd监听本地文件系统事件监控接口(inotify或fsevents)。它将若
 1. inotify+rsync
 2. sersync+rsync
 3. lsyncd+rsync
+
 进行了对比：
 1. inotify+rsync方案，有网友表示同步单个文件性能非常差。而且由于inotify的bug，必须让rsync同步整个目录而不是某个文件，否则可能出现文件遗漏。如果想让该方案保持性能且不遗漏文件，需要对整个体系进行认真的设计，时间成本会比较高。
 2. sersync+rsync方案，开源项目，最近一次代码更新时间是2015年8月份，而且缺少社区支持。
@@ -259,7 +260,7 @@ sync {
 	-- 同步的源目录
     source = "/temp/test_src0/",
 	-- 同步的目标目录
-    target = "rsync@192.168.2.230::rsync_test0",
+	target = "rsync://rsync@192.168.2.230/rsync_test0",
 	-- 是否同步删除 true=同步删除 false=增量备份
     delete = false,
 	-- 排除同步文件
